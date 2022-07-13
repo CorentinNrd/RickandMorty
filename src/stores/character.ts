@@ -9,6 +9,9 @@ export interface Result {
   type: string;
   gender: string;
   image: string;
+  episode: [];
+  origin: [];
+  location: [];
 }
 
 export interface Details {
@@ -18,15 +21,18 @@ export interface Details {
 export const useCharacterStore = defineStore({
   id: 'character',
   state: () =>
-    ({
-      result: {
-        id: '',
-        name: '',
-        status: '',
-        species: '',
-        type: '',
-        gender: '',
-        image: ''
+  ({
+    result: {
+      id: '',
+      name: '',
+      status: '',
+      species: '',
+      type: '',
+      gender: '',
+      image: '',
+      episode: [],
+      origin: [],
+      location: [],
       },
     } as Details),
   actions: {
@@ -34,6 +40,7 @@ export const useCharacterStore = defineStore({
       const response = await axios.get(
         `https://rickandmortyapi.com/api/character/${id}`
       );
+      console.log(response.data);
       this.result = response.data;
     },
   },
