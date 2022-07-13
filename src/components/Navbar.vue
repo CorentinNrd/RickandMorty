@@ -13,7 +13,7 @@
       </ul>
       <ul>
         <li>
-          <el-link href="/profil">Mon compte</el-link>
+          <el-link href="https://github.com/CorentinNrd/RickandMorty" target="_blank">Github du projet</el-link>
         </li>
       </ul>
     </nav>
