@@ -13,7 +13,11 @@
       </ul>
       <ul>
         <li>
-          <el-link href="https://github.com/CorentinNrd/RickandMorty" target="_blank">Github du projet</el-link>
+          <el-link
+            href="https://github.com/CorentinNrd/RickandMorty"
+            target="_blank"
+            >Github du projet</el-link
+          >
         </li>
       </ul>
     </nav>
@@ -35,9 +39,8 @@
     right: 0;
     padding: 0px 20px 0px 20px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    @media (min-width: 768px) {
-      height: 5rem;
-    }
+    height: 4rem;
+
     ul {
       list-style: none;
       margin: 0;

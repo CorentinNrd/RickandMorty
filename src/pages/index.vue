@@ -65,6 +65,7 @@ onMounted(() => {
     align-items: center;
     color: #fff;
     margin: 0px 0px 40px 0px;
+    padding: 30px;
   }
 
   .kl-cards:hover {
